@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+
+
+        <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>籃球場</title>
+    		<!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"> <!--橫列一包含在框架中-->
+        <link href="css/base.css" rel="stylesheet">
+     <!--  base匯入橫列一,讓tittle變成在框架裡-->
+
+
+     <!--icon-->
+     
+     <link rel="shortcut icon" href="./imgs/basketball-ball.png">
+
+
+
+      <title>關於籃球場</title>
+      
+    
+    
+    
+    </head>
+    <body>
+                 <header>
+    <div class="container">
+        <!--橫列一-->
+        <!--如要改背景顏色請在base.css裡面改-->
+     <div class="row">
+        <a class="brand pull-left" onclick="history.back()"  href="#">回上一頁</a> <!--回上頁-->
+         <ul class="list-inline list-unstyled pull-right"></ul>
+         
+        
+     </div>
+    </div>
+  </header>
+
+
+
+  <section id="about">
+    <div class="container"> 
+    <!-- 橫列二 -->
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="imgs/c1.jpg" class="img-responsive">
+      </div>
+      <div class="col-sm-6">
+      <h3>新生籃球場</h3> 
+        <p>
+            位於華山文創園區旁的新生高架橋下，從晚上6開始就會湧入大群的人潮，包括上班族、學生，名人或是SBL的球星，他們來此的目的只有一個─「盡情的鬥牛」！拋開白天學業或工作的煩惱，盡情享受揮汗的痛快。
+        </p>
+      </div>
+    </div>
+    <hr>
+
+
+     <!-- 橫列三 -->
+     <div class="row">
+      <div class="col-sm-6">
+        <img src="imgs/c2.jpg" class="img-responsive">
+      </div>
+      <div class="col-sm-6">
+      <h3>青年公園籃球場</h3> 
+        <p>
+            球友口中「全台北最棒的戶外籃球場」─青年公園籃球場，曾經因場地環境骯髒，廁所衛生差等原因，讓許多球友望而卻步，不過歷經去年大幅度翻修，包括地板、球框、場地規劃、廁所改善等，讓原本沒落的青年籃球場恢復生機，再次吸引民眾前來打球，人氣水漲船高。
+        </p>
+      </div>
+    </div>
+   
+    <hr>
+
+<!--這裡開始--->
+
+<form>
+  <p>請選擇球場</p>
+  <!--給定這id，等等需要用他填入學院資料,onchange內動到這element會呼叫裡面的方法
+  this.selectedIndex是選到第幾項的值(0開始)傳入當參數-->
+  <select id="college-list" onchange="changeCollege(this.selectedIndex)"></select>
+  <br>
+  <br>
+  <p>當你選擇地區後，下列選單會列出屬於該地區的球場</p>
+  <select id="sector-list"></select><!--給定這id，等等需要用他填入對應的系所資料-->
+</form>
+
+<script type="text/javascript">
+  var colleges=['新店區','中正區','文山區'];
+  var collegeSelect=document.getElementById("college-list");
+  var inner="";
+  for(var i=0;i<colleges.length;i++){
+    inner=inner+'<option value=i>'+colleges[i]+'</option>';
+  }
+  collegeSelect.innerHTML=inner;
+  
+  
+  var sectors=new Array();
+  sectors[0]=['僑愛籃球場' ,'玫瑰城籃球場' ,'僑義籃球場 '];
+  sectors[1]=[' 美河堤籃球場 ',' 新生橋下籃球場 ','北科大籃球場 ','新生公園籃球場'];	
+  sectors[2]=['文山景美運動公園','國立政治大學體育館 '];	
+  function changeCollege(index){
+    var Sinner="";
+    for(var i=0;i<sectors[index].length;i++){
+      Sinner=Sinner+'<option value=i>'+sectors[index][i]+'</option>';
+    }
+    var sectorSelect=document.getElementById("sector-list");
+    sectorSelect.innerHTML=Sinner;
+  }
+  changeCollege(document.getElementById("college-list").selectedIndex);
+  </script>
+<!--這裡結束--->
+
+  <hr>
+ 
+  <hr>
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.383249214844!2d121.50291571574517!3d25.02106474496213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9b85a79d7a1%3A0xf6a8adaedbd349!2z6Z2S5bm05YWs5ZyS57GD55CD5aC0!5e0!3m2!1szh-TW!2stw!4v1615001750050!5m2!1szh-TW!2stw" 
+    width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+      </div>    
+      </div>
+    </div>
+    
+
+
+
+    </body>
+ </html>

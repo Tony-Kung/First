@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+   <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tony's basketball</title>
+    		<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> <!--橫列一包含在框架中-->
+    <link href="css/base.css" rel="stylesheet">
+     <!--  base匯入橫列一,讓tittle變成在框架裡-->
+     
+    <!---->
+
+    <style type="text/css">
+        .section-title {
+          text-align:center;
+          margin-top: 1em;
+          background-color: #BB3D00;
+          padding: .5em 0;
+          border-radius: .3em;
+        }
+      
+        .service {
+          border-radius: .3em;
+          background-color: #003E3E;
+          text-align: center;
+          padding: 3em 2em 1em 2em;
+          color: white;
+        }
+      
+        .service .glyphicon {
+          font-size: 3em;
+        }
+      
+        </style>
+    
+        
+     <!--icon-->
+     <link href="./imgs/basketball-ball.png" rel="icooooon" >
+
+  </head>
+
+
+        <body>
+
+
+   <header>
+    <div class="container">
+        <!--橫列一-->
+        <!--如要改背景顏色請在base.css裡面改-->
+     <div class="row">
+        <a class="brand pull-left" href="http://www.tpehpbasketball.com.tw/">籃球場</a>
+        <ul class="list-inline list-unstyled pull-right"></ul>
+        <a class="brand pull-right" href="./ballplace.html">各地籃球場</a>
+                                         
+       
+        </ul>
+     </div>
+    </div>
+  </header>
+
+  <section id="intro-header">
+    <div class="container">		
+        <!--橫列2 背景圖在css裡面改-->
+        <div class="row">
+            <div class="wrap-headline">
+               
+            <br><br><br>
+            <!--<h1 class="text-left ">會員制</h1>-->
+            <span style="background-color:rgb(228, 228, 238);font-size: 50px; margin-right:5px;">會員制</span>
+         
+
+            <ul class="list-inline list-unstyled ">
+            
+                <li>
+                    <a id="sign-btn" class="btn btn-warning btn-lg" href="#" role="button">登入</a>
+                </li>
+                <!--a id="sign-btn是變成電子郵件跟密碼的"-->
+                <li>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">註冊</a>
+                </li> 
+             </ul>
+            
+
+
+
+             <!-- 登入表單 -->
+            <form id="signin" class="form-inline text-center hidden-element">
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon">@</div>
+                    <input type="text" class="form-control" id="signin-email" placeholder="帳號">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon">*</div>
+                  <input type="password" class="form-control" id="signin-password" placeholder="密碼"> <!--type=password使密碼隱藏-->
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success">登入</button>
+              </form>
+             </div>
+             </div>
+             </div>
+            </section>  
+          
+	 
+<div class="container" style="margin-top:1.5em">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+
+            
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="https://uc.udn.com.tw/photo/2019/01/02/realtime/5742196.jpg" alt="b1" width="1170" height="658">
+        </div>
+  
+        <div class="item">
+          <img src="https://www.beautimode.com/upload/media/de12777958b6cdaa73cfd004c8f42da2.jpg" alt="b2" width="1170" height="658">
+        </div>
+  
+        <div class="item">
+          <img src="https://www.jetsotoday.com/wp-content/uploads/2019/11/20191109-peoplesplace.jpg" alt="b3" width="1170" height="658">
+        </div>
+        
+        <div class="item">
+          <img src="https://i.pinimg.com/originals/ba/07/a3/ba07a3a2bd943bd4fb8f574236ebb3cc.jpg" alt="b4" width="1170" height="658">
+        </div>
+      </div>
+  
+       <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  
+      
+  
+
+  <!--our services-->
+	<div class="container">
+        <h2 class="section-title"><strong>Our Services</strong></h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service">
+              <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+              <h3><strong>Cloud Storage</strong></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              <h3><strong>User Dashboard</strong></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+              <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+              <h3><strong>Web Services</strong></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
+            </div>
+          </div>
+  
+<!--our team-->
+          
+  <h2 class="section-title"><strong>Our Team</strong></h2>
+  <div class="row">
+    <div class="col-md-3" style="text-align:center;">
+      <img src="https://c1.hoopchina.com.cn/uploads/star/event/images/191026/8e801bdd88cc8105ede35b3b33968713a54ee06b.jpg" width="285" height="250" alt="Team" class="img-circle">
+      <h3><strong>lrving</strong></h3>
+      <em>現役最強單打手</em>
+    </div>
+    <div class="col-md-3" style="text-align:center;">
+      <img src="https://gzheading.com/uploads/allimg/20190718/ec91301642883f50e4a81643d3453e5c.jpg" width="285" height="250" alt="Team" class="img-circle">
+      <h3><strong>LeBron James</strong></h3>
+      <em>聯盟第一人</em>
+    </div>
+    <div class="col-md-3" style="text-align:center;">
+          <img src="https://assets.juksy.com/files/articles/86878/800x_100_w-5c46b6efa1df7.jpg" width="285" height="250"  alt="Team" class="img-circle">
+          <h3><strong>Luka Doncic</strong></h3>
+          <em>歐洲天才</em>
+        </div>
+    <div class="col-md-3" style="text-align:center;">
+          <img src="https://attach.setn.com/newsimages/2019/10/27/2208712-XXL.jpg"  width="285" height="250"alt="Team" class="img-circle">
+          <h3><strong>Kawhi Leonard</strong></h3>
+          <em>死亡纏繞</em>
+    </div>
+  </div>
+</div>
+		
+          <section id="about">
+           <div class="container">
+		    </div>
+        </div>
+      </div>
+    </section>
+	<section id="about">
+      <div class="container">
+     
+
+            
+        
+	  <!-- 橫列3 -->
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="imgs/2016.jpg" class="img-responsive">
+        </div>
+        <div class="col-sm-6">
+          <style>
+            h3{color:#EAC100; font-family: Yu Gothic UI;}
+          </style>
+          <h3>Kobe</h3>
+
+          <span style="background-color:#ecdcdc; font-size:20px; font-family:微軟正黑體;"> 生於美國費城，前NBA職業籃球運動員，綽號「小飛俠」、「黑曼巴 」、「老大」。身高6英尺6英寸（198公分），體重212磅，主打位置為得分後衛
+            1996年首次在NBA出賽，2016年球季結束後退休，在他為洛杉磯湖人效力的20年職業生涯中，總得分達到33,643分，位居NBA歷史第三位，並取得5次總冠軍，
+            2次總決賽最有價值球員，1次年度最有價值球員，2次得分王。另外11次入選NBA最佳陣容，18次入選全明星賽，以及2屆奧運會金牌。
+          </span>
+        
+        </div>
+      </div>
+      <hr>
+      
+      
+       <!-- 橫列4 -->
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Tim duncan</h3>
+          
+          <span style="background-color:#ecdcdc; font-size:20px; font-family:微軟正黑體;"> 生於美國費城，前NBA職業籃球運動員，綽號「小飛俠」、「黑曼巴 」、「老大」。身高6英尺6英寸（198公分），體重212磅，主打位置為得分後衛
+
+           綽號「大基本功」、「石佛」，
+          生於美屬維京群島首府克里斯琴斯特德，前職業籃球運動員，場上位置為大前鋒/中鋒，隸屬NBA聖安東尼奧馬刺。
+         鄧肯在中學之前是一位游泳選手，在高中成為一名籃球選手，在維克弗斯特大學加入籃球校隊，獲得了大西洋沿岸聯盟最佳運動員、
+         奈史密斯學院年度最佳球員、約翰伍登獎。畢業後，鄧肯以第一輪第一順位加入到了馬刺隊， 鄧肯被廣泛認為是史上最好的大前鋒。
+         他曾獲得2次最有價值球員，並且五度帶領馬刺隊在1999年、2003年、2005年、2007年和2014年獲得NBA總冠軍，更年年進入季後賽，
+         亦三度成為NBA總決賽最有價值球員。此外，鄧肯還十五度入選NBA全明星賽、十五度入選NBA最佳陣容、十五度入選NBA最佳防守陣容。
+         2016年7月11日正式宣布退休，結束了長達19年的NBA球員生涯，職業球員生涯都在聖安東尼奧馬刺隊渡過。
+         在球場外建立了「Tim duncan基金會」，為美國的健康醫療、教育和青年體育事業做貢獻。
+        </span>
+
+        </div>
+        <div class="col-sm-6"> <br><br><br><br>
+          <img src="imgs/2017.jpg" class="img-responsive">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<hr>
+  <!--email-->
+  
+	<section id="features">
+        <div class="container">
+           <div class="row">
+              <div class="contact container_email shadow" id="contact_form">
+                  <div class="contact row header">
+                      <h2>Email留言</h2>
+                      <?php echo $result; ?>
+                      <p class="lead">請輸入正確資訊與建議，我們將盡快回覆您</p>
+                      <div id="contact_results"></div>
+                  </div>
+                  <form method="post">
+                      <div class="contact row body" id="contact_body">
+                          <div class="contact-elements">
+                              <p class="left">
+                                  <label for="name">您的姓名：<span class="req">*</span></label>
+                                  <input type="text" name="name" required="true" class="input-field" placeholder="王小明" />
+                              </p>
+                              <p class="left">
+                                  <label for="email">您的Email：<span class="req">*</span></label>
+                                  <input type="email" name="email" required="true" class="input-field" placeholder="abcdefg@gmail.com" />
+                              </p><br/>
+                              <div class="contact divider"></div>
+                              <p class="left">
+                                  <label for="message">您的建議：<span class="req">*</span></label>
+                                  <textarea class="textarea-field" required="true" name="message" cols="46" rows="8"></textarea>
+                              </p>
+                          </div>
+                          <div class="center-btn" style="position:relevant; height:5vh;">
+                              <li>
+                                  <input type="submit" name="submit" class="btn btn-submit" value="Submit" />
+                              </li>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+            
+
+
+		<!-- jQuery (necessary for Bootstrap’s JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/main.js"></script> <!--案登入跳轉-->
+        
+        
+        <!-- Include all compiled plugins (below), or include individual files as needed-->
+		<script src="js/bootstrap.min.js"></script> <!--四格換頁-->
+		
+
+
+          
+        </body>
+</html>
